@@ -1,0 +1,19 @@
+<h1>New location</h1>
+<%= form_for(@location) do |f| %>
+	<h1>whats your address?</h1>
+	<div>
+		<%=f.label :address %>
+		<%=f.text_field :address %>
+	</div>
+	<div>
+		<%=f.label :latitude %>
+		<%=f.hidden_field :latitude %>
+	</div>
+	<div>
+			<%=f.label :longitude %>
+			<%=f.hidden_field :longitude %>
+	</div>
+	<div>
+		<%=f.submit %>
+	</div>
+<% end %>
