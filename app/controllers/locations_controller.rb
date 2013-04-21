@@ -17,9 +17,8 @@ class LocationsController < ApplicationController
     @location = Location.find(params[:id])
 
     @client = GooglePlaces::Client.new("AIzaSyCg4WqXROUqKw_BcSCPsNqtL60O1kFljlg")
-  @c = @client.spots(@location.latitude, @location.longitude, :types => ['cafe'], :exclude => [:name => "Starbucks"])
-  binding.pry
-
+  @c = @client.spots(@location.latitude, @location.longitude, :types => ['cafe'])
+    # binding.pry
 
     respond_to do |format|
       format.html # show.html.erb

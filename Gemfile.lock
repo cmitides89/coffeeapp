@@ -98,6 +98,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    rest-open-uri (1.0.0)
     sass (3.2.7)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -140,6 +141,7 @@ DEPENDENCIES
   patron
   pry
   rails (= 3.2.13)
+  rest-open-uri
   sass-rails (~> 3.2.3)
   shoulda
   sqlite3

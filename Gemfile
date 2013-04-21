@@ -26,6 +26,7 @@ gem 'jquery-rails'
 gem 'shoulda'
 gem 'json'
 gem 'patron'
+gem 'rest-open-uri'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

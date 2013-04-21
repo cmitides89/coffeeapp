@@ -1,4 +1,7 @@
 Coffeefinder::Application.routes.draw do
+  resources :caves
+
+
   resources :locations
 
   root :to => 'location#new'

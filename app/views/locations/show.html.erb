@@ -1,8 +1,13 @@
 <p id="notice"><%= notice %></p>
 
+<%@c.each do |p|%>
+	<%if p.name != 'Starbucks'%>
+		<%=p.name%></br>
+		<%=p.rating%>
+		<%=p.lat%>
+		<%=p.lng%>
+		<%= link_to 'Map', locations_path %>
+	<%end%>
+<%end%>
 
-<%=@c %>
-
-
-<%= link_to 'Edit', edit_location_path(@location) %> |
 <%= link_to 'Back', locations_path %>
