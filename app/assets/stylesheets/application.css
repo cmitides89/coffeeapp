@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+html{
+	width:100%;
+}
+body{font-family: "Verdana",sans-serif;
+font-style:normal;
+color:#330000;
+}
+ul{
+	list-style-type: none;
+
+}
+
+div#address{
+	border:1px solid red;
+	width:300px;
+	height:150px;
+	margin-left:auto;
+	margin-right: auto;
+}
+/*input[type="submit"]
+{
+	background:url('/images/coffee.jpg');
+}*/

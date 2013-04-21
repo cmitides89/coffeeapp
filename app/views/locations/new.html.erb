@@ -1,8 +1,9 @@
-<h1>New location</h1>
+<h1>Find Good Joe</h1>
 <%= form_for(@location) do |f| %>
-	<h1>whats your address?</h1>
+
+<div id="address">
 	<div>
-		<%=f.label :address %>
+		<%=f.label "where you at?" %>
 		<%=f.text_field :address %>
 	</div>
 	<div>
@@ -16,4 +17,5 @@
 	<div>
 		<%=f.submit %>
 	</div>
+</div>
 <% end %>

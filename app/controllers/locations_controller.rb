@@ -15,7 +15,6 @@ class LocationsController < ApplicationController
   # GET /locations/1.json
   def show
     @location = Location.find(params[:id])
-
     @client = GooglePlaces::Client.new("AIzaSyCg4WqXROUqKw_BcSCPsNqtL60O1kFljlg")
   @c = @client.spots(@location.latitude, @location.longitude, :types => ['cafe'])
     # binding.pry
@@ -25,6 +24,11 @@ class LocationsController < ApplicationController
       format.json { render json: @location }
     end
   end
+
+  def map
+    
+  end
+
 
   # GET /locations/new
   # GET /locations/new.json
@@ -36,7 +40,6 @@ class LocationsController < ApplicationController
       format.json { render json: @location }
     end
   end
-
   # GET /locations/1/edit
   def edit
     @location = Location.find(params[:id])
