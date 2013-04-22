@@ -4,7 +4,7 @@
 <div id="address">
 	<div id="where">
 		<p><%=f.label "where you at?" %></p>
-		<div><%=f.text_field :address %></div>
+		<div><%=f.text_field :address, :placeholder => "address state,city" %></div>
 	</div>
 	<div>
 		
@@ -15,7 +15,7 @@
 			<%=f.hidden_field :longitude %>
 	</div>
 	<div id="submit">
-		<%=f.submit "Create", :type => :image, :src => "http://i.imgur.com/PQ0XNRN.jpg?1"%>
+		<%=f.submit "Create", :type => :image, :src => "http://i.imgur.com/nQu1hGJ.gif?1"%>
 	</div>
 </div>
 <% end %>
