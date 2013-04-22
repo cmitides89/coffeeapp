@@ -4,7 +4,7 @@ Coffeefinder::Application.routes.draw do
 
   resources :locations
 
-  root :to => 'location#new'
+  root :to => 'locations#new'
   match '/locations/:id/map' => 'location#map', :as => :map
   
 
