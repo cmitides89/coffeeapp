@@ -1,10 +1,10 @@
-<h1>Find Good Joe</h1>
+<h1>Find Good Coffee</h1>
 <%= form_for(@location) do |f| %>
 
 <div id="address">
-	<div>
-		<%=f.label "where you at?" %>
-		<%=f.text_field :address %>
+	<div id="where">
+		<p><%=f.label "where you at?" %></p>
+		<div><%=f.text_field :address %></div>
 	</div>
 	<div>
 		
@@ -14,8 +14,8 @@
 			
 			<%=f.hidden_field :longitude %>
 	</div>
-	<div>
-		<%=f.submit %>
+	<div id="submit">
+		<%=f.submit "Create", :type => :image, :src => "http://i.imgur.com/PQ0XNRN.jpg?1"%>
 	</div>
 </div>
 <% end %>

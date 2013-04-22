@@ -1,12 +1,10 @@
-<p id="notice"><%= notice %></p>
-
 <%@c.each do |p|%>
 	<%if p.name != 'Starbucks'%>
 	<ul>
-		<li><%= image_tag("http://maps.googleapis.com/maps/api/staticmap?center=#{p.lat},#{p.lng}&zoom=15&size=600x300&maptype=roadmap
+		<li><%= image_tag("http://maps.googleapis.com/maps/api/staticmap?center=#{p.lat},#{p.lng}&zoom=15&size=350x200&maptype=roadmap
 		&markers=color:blue%7Clabel:S%7C#{p.lat},#{p.lng}&sensor=true")%></li>
 		<li><%=p.name%></li>
-		<li><%=p.rating%></li>
+		<li>Rating: <%=p.rating%></li>
 		<li><%p.lat%></li>
 		<li><%p.lng%></li>
 	</ul>	
