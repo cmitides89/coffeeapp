@@ -30,6 +30,7 @@ gem 'shoulda'
 gem 'json'
 gem 'patron'
 gem 'rest-open-uri'
+gem 'google_places'
 group :production do 
 	gem 'pg'
 end
