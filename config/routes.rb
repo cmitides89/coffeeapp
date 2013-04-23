@@ -6,6 +6,7 @@ Coffeefinder::Application.routes.draw do
 
   root :to => 'locations#new'
   match '/locations/:id/map' => 'location#map', :as => :map
+  # match '/locations/happy/tree/friends/:id' => 'locations#happyfriends', :as => :tree_friends, :via => :post example from 
   
 
 
